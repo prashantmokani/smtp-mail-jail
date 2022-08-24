@@ -1,0 +1,217 @@
+2022-08-24 10:49:34.038  INFO 3759 --- [main] com.fake.smtp.SmtpApplication            : Starting SmtpApplication using Java 11.0.4 on Prashants-MacBook.local with PID 3759 (/Users/prashantmokani/Documents/Projects/home_directory/smtp-maven/target/classes started by prashantmokani in /Users/prashantmokani/Documents/Projects/home_directory/smtp-maven)
+2022-08-24 10:49:34.045  INFO 3759 --- [main] com.fake.smtp.SmtpApplication            : The following profiles are active: default
+2022-08-24 10:49:34.827  INFO 3759 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-24 10:49:34.887  INFO 3759 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2022-08-24 10:49:35.869  INFO 3759 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5080 (http)
+2022-08-24 10:49:35.880  INFO 3759 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 10:49:35.880  INFO 3759 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 10:49:35.986  INFO 3759 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 10:49:35.987  INFO 3759 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1856 ms
+2022-08-24 10:49:36.113  INFO 3759 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-24 10:49:36.459  INFO 3759 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-24 10:49:36.471  INFO 3759 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/fakesmtp'
+2022-08-24 10:49:36.609  INFO 3759 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-08-24 10:49:36.610  INFO 3759 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/fakesmtp (PostgreSQL 14.2)
+2022-08-24 10:49:36.748  INFO 3759 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.043s)
+2022-08-24 10:49:36.839  INFO 3759 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2022-08-24 10:49:36.977  INFO 3759 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-08-24 10:49:36.985  INFO 3759 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - initial table structure"
+2022-08-24 10:49:37.046  INFO 3759 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.117s)
+2022-08-24 10:49:37.151  INFO 3759 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-24 10:49:37.212  INFO 3759 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-08-24 10:49:37.405  INFO 3759 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-24 10:49:37.585  INFO 3759 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-24 10:49:38.321  INFO 3759 --- [main] org.hibernate.orm.connections.access     : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@141229f6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-08-24 10:49:38.471  INFO 3759 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-24 10:49:38.482  INFO 3759 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-24 10:49:38.905  WARN 3759 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'emailController' defined in file [/Users/prashantmokani/Documents/Projects/home_directory/smtp-maven/target/classes/com/fake/smtp/controller/EmailController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.info.BuildProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-08-24 10:49:38.905  INFO 3759 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-24 10:49:38.907  INFO 3759 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-24 10:49:38.914  INFO 3759 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-24 10:49:38.916  INFO 3759 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-08-24 10:49:38.934  INFO 3759 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-24 10:49:38.961 ERROR 3759 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.fake.smtp.controller.EmailController required a bean of type 'org.springframework.boot.info.BuildProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.boot.info.BuildProperties' in your configuration.
+
+2022-08-24 11:14:11.530  INFO 4768 --- [main] com.fake.smtp.SmtpApplication            : Starting SmtpApplication v0.0.1-SNAPSHOT using Java 11.0.4 on Prashants-MacBook.local with PID 4768 (/Users/prashantmokani/Documents/Projects/home_directory/smtp-maven/target/smtp-0.0.1-SNAPSHOT.jar started by prashantmokani in /Users/prashantmokani/Documents/Projects/home_directory/smtp-maven)
+2022-08-24 11:14:11.534  INFO 4768 --- [main] com.fake.smtp.SmtpApplication            : The following profiles are active: default
+2022-08-24 11:14:12.415  INFO 4768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-24 11:14:12.503  INFO 4768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2022-08-24 11:14:13.688  INFO 4768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5080 (http)
+2022-08-24 11:14:13.705  INFO 4768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 11:14:13.706  INFO 4768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 11:14:13.784  INFO 4768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 11:14:13.785  INFO 4768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2146 ms
+2022-08-24 11:14:13.945  INFO 4768 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-24 11:14:14.242  INFO 4768 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-24 11:14:14.261  INFO 4768 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/fakesmtp'
+2022-08-24 11:14:14.480  INFO 4768 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-08-24 11:14:14.481  INFO 4768 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/fakesmtp (PostgreSQL 14.2)
+2022-08-24 11:14:14.545  INFO 4768 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.029s)
+2022-08-24 11:14:14.554  INFO 4768 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-08-24 11:14:14.555  INFO 4768 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-08-24 11:14:14.705  INFO 4768 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-24 11:14:14.799  INFO 4768 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-08-24 11:14:15.105  INFO 4768 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-24 11:14:15.315  INFO 4768 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-24 11:14:16.159  INFO 4768 --- [main] org.hibernate.orm.connections.access     : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@71904469] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-08-24 11:14:16.179  INFO 4768 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-24 11:14:16.191  INFO 4768 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-24 11:14:16.614  INFO 4768 --- [main] c.f.s.s.impl.SmtpServerConfigurator      : Setup simple username and password authentication for SMTP server
+2022-08-24 11:14:16.616  INFO 4768 --- [main] org.subethamail.smtp.server.SMTPServer   : SMTP server *:5025 starting
+2022-08-24 11:14:16.619  INFO 4768 --- [org.subethamail.smtp.server.ServerThread *:5025] o.subethamail.smtp.server.ServerThread   : SMTP server *:5025 started
+2022-08-24 11:14:16.814  WARN 4768 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-24 11:14:18.324  INFO 4768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5080 (http) with context path ''
+2022-08-24 11:14:18.416  INFO 4768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5081 (http)
+2022-08-24 11:14:18.418  INFO 4768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 11:14:18.418  INFO 4768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 11:14:18.424  INFO 4768 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-08-24 11:14:18.424  INFO 4768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 94 ms
+2022-08-24 11:14:18.436  INFO 4768 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-08-24 11:14:18.970  INFO 4768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5081 (http) with context path ''
+2022-08-24 11:14:18.992  INFO 4768 --- [main] com.fake.smtp.SmtpApplication            : Started SmtpApplication in 8.229 seconds (JVM running for 8.918)
+2022-08-24 11:14:19.707  INFO 4768 --- [task-pool1] c.fake.smtp.service.EmailRetentionTimer  : Deleted 0 emails which exceeded the maximum number 500 of emails to be stored
+2022-08-24 11:14:41.138  INFO 4768 --- [http-nio-5080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-24 11:18:30.213  INFO 4768 --- [org.subethamail.smtp.server.Session-/127.0.0.1:50823] c.fake.smtp.server.impl.MessageListener  : Received email from info@ekzeroclient.com for jay.beldar@ekzero.com
+2022-08-24 11:19:19.709  INFO 4768 --- [task-pool1] c.fake.smtp.service.EmailRetentionTimer  : Deleted 0 emails which exceeded the maximum number 500 of emails to be stored
+2022-08-24 11:19:29.728  INFO 4768 --- [http-nio-5081-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-24 11:24:19.712  INFO 4768 --- [task-pool2] c.fake.smtp.service.EmailRetentionTimer  : Deleted 0 emails which exceeded the maximum number 500 of emails to be stored
+2022-08-24 11:29:19.640  INFO 4768 --- [task-pool1] c.fake.smtp.service.EmailRetentionTimer  : Deleted 0 emails which exceeded the maximum number 500 of emails to be stored
+2022-08-24 11:34:19.641  INFO 4768 --- [task-pool3] c.fake.smtp.service.EmailRetentionTimer  : Deleted 0 emails which exceeded the maximum number 500 of emails to be stored
+2022-08-24 11:39:19.636  INFO 4768 --- [task-pool2] c.fake.smtp.service.EmailRetentionTimer  : Deleted 0 emails which exceeded the maximum number 500 of emails to be stored
+2022-08-24 11:40:02.670  INFO 5752 --- [main] com.fake.smtp.SmtpApplication            : Starting SmtpApplication using Java 11.0.4 on Prashants-MacBook.local with PID 5752 (/Users/prashantmokani/Documents/Projects/home_directory/smtp-maven/target/classes started by prashantmokani in /Users/prashantmokani/Documents/Projects/home_directory/smtp-maven)
+2022-08-24 11:40:02.674  INFO 5752 --- [main] com.fake.smtp.SmtpApplication            : The following profiles are active: default
+2022-08-24 11:40:03.452  INFO 5752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-24 11:40:03.504  INFO 5752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2022-08-24 11:40:04.446  INFO 5752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5080 (http)
+2022-08-24 11:40:04.455  INFO 5752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 11:40:04.455  INFO 5752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 11:40:04.553  INFO 5752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 11:40:04.553  INFO 5752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1765 ms
+2022-08-24 11:40:04.691  INFO 5752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-24 11:40:04.866  INFO 5752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-24 11:40:04.893  INFO 5752 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/fakesmtp'
+2022-08-24 11:40:05.033  INFO 5752 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-08-24 11:40:05.034  INFO 5752 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/fakesmtp (PostgreSQL 14.2)
+2022-08-24 11:40:05.073  INFO 5752 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.019s)
+2022-08-24 11:40:05.080  INFO 5752 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-08-24 11:40:05.081  INFO 5752 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-08-24 11:40:05.182  INFO 5752 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-24 11:40:05.230  INFO 5752 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-08-24 11:40:05.390  INFO 5752 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-24 11:40:05.505  INFO 5752 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-24 11:40:06.247  INFO 5752 --- [main] org.hibernate.orm.connections.access     : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@126f2eb8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-08-24 11:40:06.265  INFO 5752 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-24 11:40:06.273  INFO 5752 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-24 11:40:06.739  INFO 5752 --- [main] c.f.s.s.impl.SmtpServerConfigurator      : Setup simple username and password authentication for SMTP server
+2022-08-24 11:40:06.741  INFO 5752 --- [main] org.subethamail.smtp.server.SMTPServer   : SMTP server *:5025 starting
+2022-08-24 11:40:06.742  WARN 5752 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailServer': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.net.BindException: Address already in use (Bind failed)
+2022-08-24 11:40:06.743  INFO 5752 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-24 11:40:06.745  INFO 5752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-24 11:40:06.752  INFO 5752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-24 11:40:06.754  INFO 5752 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-08-24 11:40:06.772  INFO 5752 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-24 11:40:06.801 ERROR 5752 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailServer': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.net.BindException: Address already in use (Bind failed)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.6.3.jar:2.6.3]
+	at com.fake.smtp.SmtpApplication.main(SmtpApplication.java:18) ~[classes/:na]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use (Bind failed)
+	at org.subethamail.smtp.server.SMTPServer.start(SMTPServer.java:292) ~[subethasmtp-3.1.7.jar:June 16 2012]
+	at com.fake.smtp.server.impl.SmtpServerImpl.start(SmtpServerImpl.java:16) ~[classes/:na]
+	at com.fake.smtp.server.EmailServer.startServer(EmailServer.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436) ~[na:na]
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:381) ~[na:na]
+	at org.subethamail.smtp.server.SMTPServer.createServerSocket(SMTPServer.java:334) ~[subethasmtp-3.1.7.jar:June 16 2012]
+	at org.subethamail.smtp.server.SMTPServer.start(SMTPServer.java:288) ~[subethasmtp-3.1.7.jar:June 16 2012]
+	... 27 common frames omitted
+
+2022-08-24 11:43:46.212  INFO 6159 --- [main] com.fake.smtp.SmtpApplication            : Starting SmtpApplication using Java 11.0.4 on Prashants-MacBook.local with PID 6159 (/Users/prashantmokani/Documents/Projects/home_directory/smtp-maven/target/classes started by prashantmokani in /Users/prashantmokani/Documents/Projects/home_directory/smtp-maven)
+2022-08-24 11:43:46.215  INFO 6159 --- [main] com.fake.smtp.SmtpApplication            : The following profiles are active: default
+2022-08-24 11:43:46.887  INFO 6159 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-24 11:43:46.939  INFO 6159 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2022-08-24 11:43:47.851  INFO 6159 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5080 (http)
+2022-08-24 11:43:47.859  INFO 6159 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 11:43:47.859  INFO 6159 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 11:43:47.933  INFO 6159 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 11:43:47.933  INFO 6159 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2022-08-24 11:43:48.037  INFO 6159 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-24 11:43:48.180  INFO 6159 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-24 11:43:48.190  INFO 6159 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/fakesmtp'
+2022-08-24 11:43:48.300  INFO 6159 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-08-24 11:43:48.301  INFO 6159 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/fakesmtp (PostgreSQL 14.2)
+2022-08-24 11:43:48.334  INFO 6159 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.016s)
+2022-08-24 11:43:48.340  INFO 6159 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-08-24 11:43:48.341  INFO 6159 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-08-24 11:43:48.434  INFO 6159 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-24 11:43:48.482  INFO 6159 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-08-24 11:43:48.600  INFO 6159 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-24 11:43:48.691  INFO 6159 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-24 11:43:49.226  INFO 6159 --- [main] org.hibernate.orm.connections.access     : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7682bf66] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-08-24 11:43:49.242  INFO 6159 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-24 11:43:49.249  INFO 6159 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-24 11:43:49.661  INFO 6159 --- [main] c.f.s.s.impl.SmtpServerConfigurator      : Setup simple username and password authentication for SMTP server
+2022-08-24 11:43:49.663  INFO 6159 --- [main] org.subethamail.smtp.server.SMTPServer   : SMTP server *:5025 starting
+2022-08-24 11:43:49.666  INFO 6159 --- [org.subethamail.smtp.server.ServerThread *:5025] o.subethamail.smtp.server.ServerThread   : SMTP server *:5025 started
+2022-08-24 11:43:49.786  WARN 6159 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-24 11:43:50.934  INFO 6159 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5080 (http) with context path ''
+2022-08-24 11:43:50.996  INFO 6159 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5081 (http)
+2022-08-24 11:43:50.996  INFO 6159 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 11:43:50.997  INFO 6159 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 11:43:51.010  INFO 6159 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-08-24 11:43:51.010  INFO 6159 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 72 ms
+2022-08-24 11:43:51.023  INFO 6159 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-08-24 11:43:51.283  INFO 6159 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5081 (http) with context path ''
+2022-08-24 11:43:51.311  INFO 6159 --- [main] com.fake.smtp.SmtpApplication            : Started SmtpApplication in 5.566 seconds (JVM running for 6.433)
+2022-08-24 11:43:51.861  INFO 6159 --- [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-24 11:43:51.943  INFO 6159 --- [task-pool1] c.fake.smtp.service.EmailRetentionTimer  : Deleted 0 emails which exceeded the maximum number 500 of emails to be stored
+2022-08-24 11:46:13.694  INFO 6159 --- [SpringApplicationShutdownHook] com.fake.smtp.server.EmailServer         : Stop SMTP server
+2022-08-24 11:46:13.695  INFO 6159 --- [SpringApplicationShutdownHook] org.subethamail.smtp.server.SMTPServer   : SMTP server *:5025 stopping
+2022-08-24 11:46:13.695  INFO 6159 --- [org.subethamail.smtp.server.ServerThread *:5025] o.subethamail.smtp.server.ServerThread   : SMTP server *:5025 stopped
+2022-08-24 11:46:13.695  INFO 6159 --- [SpringApplicationShutdownHook] com.fake.smtp.server.EmailServer         : SMTP server stopped
+2022-08-24 11:46:13.696  INFO 6159 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-24 11:46:13.698  INFO 6159 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-24 11:46:13.702  INFO 6159 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/html-header :: html-header"></head>
+
+<body>
+<div th:replace="fragments/navbar :: navbar"></div>
+<div class="container" style="margin-top:60px">
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content grey lighten-5">
+                    <span class="card-title"><i class="material-icons" style="vertical-align: bottom;">email</i>&nbsp;Email&nbsp;<span th:text="${mail.id}">mail.id</span></span>
+                    <a class="btn-floating top-right waves-effect waves-light grey lighten-4" th:href="@{/email}"><i class="material-icons blue-text text-darken-4">close</i></a>
+                    <table class="striped">
+                        <tr>
+                            <th>From:</th>
+                            <td th:text="${mail.fromAddress}">From</td>
+                        </tr>
+                        <tr>
+                            <th>To:</th>
+                            <td th:text="${mail.toAddress}">To</td>
+                        </tr>
+                        <tr>
+                            <th>Received On:</th>
+                            <td th:with="df='yyyy-MM-dd HH:mm:ss'" th:text="${#calendars.format(mail.receivedOn,df)}">Received On</td>
+                        </tr>
+                        <tr>
+                            <th>Subject:</th>
+                            <td th:text="${mail.subject}">Subject</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width mail-type">
+                        <li class="tab col s3" th:each="c,is : ${mail.contents}" th:classappend="${is.first} ? 'active' : ''">
+                            <a th:href="'#mail-content-'+${c.id}" th:text="${c.contentType}">type</a>
+                        </li>
+                        <li class="tab col s3">
+                            <a href="#mail-content-raw" aria-controls="mail-content-raw">Raw</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-content">
+                    <div th:each="c,is : ${mail.contents}" th:id="'mail-content-'+${c.id}" class="mail-content-plain">
+						<iframe th:srcdoc="${c.data}" style="height:100vh;width:100%"></iframe>
+                    </div>
+                    <div id="mail-content-raw" class="grey lighten-4">
+                        <pre class="card-content" th:text="${mail.rawData}"></pre>
+                    </div>
+                </div>
+                <div class="card-action" th:if="${not #lists.isEmpty(mail.attachments)}">
+                    <a th:href="@{|/api/email/${mail.id}/attachment/${a.id}|}" th:each="a : ${mail.attachments}">
+                        <i class="material-icons tiny blue-text">attach_file</i>
+                        <span class="blue-text no-uppercase" th:text="${a.filename}"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.tabs').tabs();
+      });
+</script>
+</body>
+</html>
